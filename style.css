@@ -1,0 +1,148 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* DARK MODE */
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --card: #f3f3f3;
+    --accent: #ff6600;
+}
+.dark {
+    --bg: #0f0f0f;
+    --text: #ffffff;
+    --card: #1e1e1e;
+}
+
+/* GENERAL */
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s ease;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--card);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+}
+
+/* HERO */
+.home span {
+    color: var(--accent);
+}
+.btn {
+    background: var(--accent);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* SKILLS GRID */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.skill-card {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* PROJECTS */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.project-card {
+    background: var(--card);
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* CONTACT FORM */
+.contact-form {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+/* DARK MODE TOGGLE BUTTON */
+#theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 10px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    animation: fade 1.2s ease;
+}
+@keyframes fade {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.slide-up {
+    animation: slideUp 1s ease;
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}

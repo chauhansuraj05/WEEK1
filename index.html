@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Chauhan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle">🌙</button>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Suraj</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="section home fade-in">
+        <h1>Hello, I'm <span>Suraj Chauhan</span></h1>
+        <p>Aspiring Full-Stack Developer | JavaScript | React | Node.js</p>
+        <a href="#contact" class="btn">Let's Connect</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section fade-in">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate developer from Mumbai, currently pursuing Electronics and Computer Science.  
+            I love building web applications and exploring new technologies.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section fade-in">
+        <h2>My Skills</h2>
+        <div class="skill-grid">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">MongoDB</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">Python</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section fade-in">
+        <h2>Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card slide-up">
+                <h3>Organ Donation Website</h3>
+                <p>Connecting donors with hospitals using a clean UI & database integration.</p>
+            </div>
+
+            <div class="project-card slide-up">
+                <h3>Word Crumble Game</h3>
+                <p>A fun scrambled-word game with scoring logic.</p>
+            </div>
+
+            <div class="project-card slide-up">
+                <h3>Attendance Management System</h3>
+                <p>React + Firebase based cloud-synced attendance app.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section fade-in">
+        <h2>Contact Me</h2>
+
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+
+        <p id="formMessage"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
